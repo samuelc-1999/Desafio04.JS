@@ -1,0 +1,89 @@
+:root {
+  font-size: 62.5%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(90deg, rgba(223,223,223,1) 5%, rgba(145,158,156,1) 32%, rgba(84,95,99,1) 50%, rgba(44,56,64,1) 100%);
+  min-height: 100vh;
+  display: grid;
+  place-content: center;
+}
+
+
+main {
+  width: 82.1rem;
+  height: 33.6rem;
+  display: flex;
+  justify-content: space-between ;
+  align-items: center;
+  text-align: center;
+}
+
+.hide {
+  display: none;
+}
+
+.minutes, span, .seconds {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 12.6rem;
+  color: #323238;
+}
+
+.buttons {
+  display: flex;
+  gap: 4rem;
+  justify-content: center;
+  cursor: pointer;
+}
+
+#cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3.2rem;
+}
+
+.tree, .rain, .house, .fire {
+  width: 13.8rem;
+  height: 15.2rem;
+  background: #E1E1E6;
+  border-radius: 2.4rem;
+  display: grid;
+  place-content: center;
+  cursor: pointer;
+}
+
+.tree-color {
+  background-image: radial-gradient(circle at 11.6% 23.11%, #7c7c48 0, #717943 12.5%, #62723b 25%, #4d672f 37.5%, #32591f 50%, #115812 62.5%, #004009 75%, #003908 87.5%, #00350c 100%);
+}
+
+.color-fire {
+background-image: radial-gradient(circle at 50% -20.71%, #d7c35d 0, #deba54 8.33%, #e4b04d 16.67%, #e9a546 25%, #ed9841 33.33%, #f0893e 41.67%, #f2793c 50%, #f3673d 58.33%, #f35542 66.67%, #f34249 75%, #ee1944 83.33%, #c9054d 91.67%, #ec0069 100%);
+}
+
+.color-rain {
+  background-image: linear-gradient(145deg, #ceffff 0, #beffff 12.5%, #b1ffff 25%, #a6ffff 37.5%, #9df2f2 50%, #96d5da 62.5%, #8fbcc3 75%, #758d92 87.5%, #6d7d83 100%);
+}
+
+.color-coffe {
+  background-image: radial-gradient(circle at 50% 23.37%, #fff07f 0, #ffe57b 8.33%, #ffd779 16.67%, #ffc877 25%, #fcb674 33.33%, #eda471 41.67%, #d8906c 50%, #c27e66 58.33%, #ae6f62 66.67%, #9c635d 75%, #8e5a5a 83.33%, #825358 91.67%, #794e57 100%);
+
+}
+
+.more:active svg path {
+  fill: #5098d3
+}
+
+.less:active svg path {
+  fill: #5098d3
+}
+
+.stop:active svg path {
+  fill: #d43838
+}
